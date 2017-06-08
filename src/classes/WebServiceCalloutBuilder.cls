@@ -35,14 +35,13 @@ global with sharing class WebServiceCalloutBuilder{
     private final Integer MAX_TIME_OUT = 120000;
     
     global WebServiceCalloutBuilder(){
-        mHostURL = Constants.BLANK_STRING;
-        mHostURI = Constants.BLANK_STRING;
         mURLParamMap = new Map<String, String>();
         mHeaderParamMap = new Map<String, String>();
-        mEndPoint = Constants.BLANK_STRING;
-
-        mRequestMethod = Constants.BLANK_STRING;
-        mRequestBody = Constants.BLANK_STRING;
+        mHostURL = '';
+        mHostURI = '';
+        mEndPoint = '';
+        mRequestMethod = '';
+        mRequestBody = '';
         mTimeOut = MAX_TIME_OUT;
     }
 
